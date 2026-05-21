@@ -1,0 +1,20 @@
+RestaurantName,Rating,MenuItemName,Description,Price,Ingredients
+Central Valley Tacos,4.6,Chicken Street Tacos,Three tacos with grilled chicken and salsa,9.99,"Chicken:180:false;Tortilla:120:false;Salsa:25:false;Cheese:90:true"
+Central Valley Tacos,4.6,Carne Asada Burrito,Large burrito with steak rice and beans,12.50,"Steak:220:false;Rice:150:false;Beans:130:false;Tortilla:120:false"
+Central Valley Tacos,4.6,Veggie Taco Plate,Tacos with grilled vegetables beans and avocado,10.75,"Bell Pepper:30:false;Beans:130:false;Avocado:100:false;Tortilla:120:false"
+
+Golden Wok Express,4.3,Orange Chicken Bowl,Crispy chicken with orange sauce over rice,11.25,"Chicken:200:false;Rice:150:false;Orange Sauce:70:false"
+Golden Wok Express,4.3,Vegetable Chow Mein,Noodles with vegetables and soy sauce,9.50,"Noodles:210:false;Broccoli:40:false;Soy Sauce:15:true"
+Golden Wok Express,4.3,Beef Broccoli Plate,Beef and broccoli served with steamed rice,13.75,"Beef:240:false;Broccoli:40:false;Rice:150:false"
+
+Merced Pizza House,4.5,Pepperoni Pizza,Personal pizza with pepperoni and cheese,10.99,"Dough:180:false;Pepperoni:160:false;Mozzarella:120:true"
+Merced Pizza House,4.5,Margherita Pizza,Classic pizza with tomato basil and mozzarella,11.50,"Dough:180:false;Tomato:25:false;Mozzarella:120:true"
+Merced Pizza House,4.5,Garlic Cheese Bread,Toasted bread with garlic butter and cheese,6.99,"Bread:140:false;Garlic Butter:90:true;Cheese:100:true"
+
+Farm Fresh Bowls,4.8,Harvest Chicken Bowl,Chicken bowl with quinoa and vegetables,13.25,"Chicken:180:false;Quinoa:130:false;Kale:25:false"
+Farm Fresh Bowls,4.8,Vegan Power Bowl,Plant-based bowl with beans rice and avocado,12.75,"Beans:130:false;Rice:150:false;Avocado:100:false"
+Farm Fresh Bowls,4.8,Fruit Yogurt Bowl,Yogurt bowl with seasonal fruit and granola,8.99,"Yogurt:120:true;Strawberries:25:false;Granola:140:false"
+
+Burger Barn,4.1,Classic Cheeseburger,Beef burger with cheese lettuce and tomato,10.50,"Beef Patty:250:false;Cheese:90:true;Bun:140:false"
+Burger Barn,4.1,BBQ Bacon Burger,Burger with bacon barbecue sauce and onion rings,13.99,"Beef Patty:250:false;Bacon:180:false;Barbecue Sauce:60:false"
+Burger Barn,4.1,Fries Basket,Crispy fries with seasoning,4.99,"Potatoes:180:false;Salt:0:false;Oil:120:false"
