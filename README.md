@@ -1,4 +1,4 @@
-# algorithmReview l
+# algorithmReview 
 
 # Restaurant Review System - Group Lab
 
