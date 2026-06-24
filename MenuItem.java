@@ -1,27 +1,35 @@
 // Created by Mia
-public class Ingredient {
+import java.util.ArrayList;
 
+public class MenuItem {
     private String name;
-    private int calories;
-    private boolean allergen;
+    private String description;
+    private double price;
+    private ArrayList<Ingredient> ingredients;
 
-    public Ingredient(String name, int calories, boolean allergen) {
+    public MenuItem(String name, String description, double price) {
         this.name = name;
-        this.calories = calories;
-        this.allergen = allergen;
+        this.description = description;
+        this.price = price;
+        this.ingredients = new ArrayList<>();
     }
 
-    public String get Name() { return name; }
-    public int getCalories() { reture calories; }
-    public boolean getAllergen() { return allergen; }
+    public String getName() { return name; }
+    public String getDescription() { return description; }
+    public double getPrice() { return price; }
+    public ArrayList<Ingredient> getIngredients() { return ingredients; }
 
-    public void setName(String name) {this.name = name:}
-    public void setCalories (int csalories) {this.caloeies = calories;}
-    public void setallergen(boolean allergen) {this.allergen = allergen;}
+    public void setName(String name) { this.name = name; }
+    public void setDescription(String description) { this.description = description; }
+    public void setPrice(double price) { this.price = price; }
+
+    pulbic void addIngredient(Ingredient ingredient) {
+        ingredients.add(ingredient);
+    }
 
     @Override
-    public String toString() {
-        return nam + " | Calories: " + calories + " | Allergen: " + allergen;
+    piblic String toString() {
+        return name + " | " + description + " | $" + price;
     }
-}
+    
   
