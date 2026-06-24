@@ -5,7 +5,7 @@ public class MenuItem {
     private String name;
     private String description;
     private double price;
-    private ArrayList<Ingredient> ingredients;
+    private ArrayList<Ingredients> ingredients;
 
     public MenuItem(String name, String description, double price) {
         this.name = name;
@@ -17,13 +17,13 @@ public class MenuItem {
     public String getName() { return name; }
     public String getDescription() { return description; }
     public double getPrice() { return price; }
-    public ArrayList<Ingredient> getIngredients() { return ingredients; }
+    public ArrayList<Ingredients> getIngredients() { return ingredients; }
 
     public void setName(String name) { this.name = name; }
     public void setDescription(String description) { this.description = description; }
     public void setPrice(double price) { this.price = price; }
 
-    public void addIngredient(Ingredient ingredient) {
+    public void addIngredient(Ingredients ingredient) {
         ingredients.add(ingredient);
     }
 

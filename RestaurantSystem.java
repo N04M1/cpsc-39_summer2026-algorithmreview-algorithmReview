@@ -115,8 +115,8 @@ public class RestaurantSystem {
                             Boolean.parseBoolean(
                                     ingredientInfo[2]);
 
-                    Ingredient ingredient =
-                            new Ingredient(
+                    Ingredients ingredient =
+                            new Ingredients(
                                     ingredientName,
                                     calories,
                                     allergen);
@@ -173,7 +173,7 @@ public class RestaurantSystem {
 
                 System.out.println(item);
 
-                ArrayList<Ingredient> ingredients =
+                ArrayList<Ingredients> ingredients =
                         item.getIngredients();
 
                 for (int k = 0;
