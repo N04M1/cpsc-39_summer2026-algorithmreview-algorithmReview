@@ -186,8 +186,7 @@ public class RestaurantSystem {
                 }
             }
         }
-    
-        
+    //group work     
         for (int i = 0; i < restaurants.size(); i++) {
 
             Restaurant r = restaurants.get(i);
