@@ -186,23 +186,38 @@ public class RestaurantSystem {
                 }
             }
         }
+    
+        
+        for (int i = 0; i < restaurants.size(); i++) {
 
-        /*
-        ======================================================
-        GROUP WORK SECTION
-        ======================================================
+            Restaurant r = restaurants.get(i);
 
-        Complete the following algorithms together:
+            System.out.println("--- " + r.getName() + " ---");
+            System.out.printf("Average Price: $%.2f%n", averagePrice(r));
+            System.out.println("Highest-Priced: " + highestPricedItem(r).getName());
+            System.out.println("Lowest-Priced: " + lowestPricedItem(r).getName());
+            System.out.printf("Average Calories: %.1f%n", averageCalories(r));
+            
+    }
 
-        1. Average menu item price for each restaurant
-        2. Highest-priced menu item for each restaurant
-        3. Lowest-priced menu item for each restaurant
-        4. Average calories for each restaurant
-
-        Each algorithm must be written in
-        its own method.
-
-        */
+    public static double avergePrice(Restaurant restaurant) {
+            Arraylist<MeanuItem> items = restaurant.getMenuItems();
+            double tatal = 0; 
+            for (int i = 0; i < items.size(); i++) {
+                total += items.get(i).getPrice();
+            }
+             return total / items.size();
+    }
+    
+    public static MeanuItem highestPricedItem(Restaurant restaurant) {
+            Arraylist<MeanuItem> items = restaurant.getMenuItems();
+            MenuItem highest = items.get(0);
+            for (int i = 1; i < items.size(); i++) {
+                if (items.get(i).getPrice() > highest.getPrice()) {
+                    highest = items.get(i);
+                }
+            }
+             return highest;
     }
 
     /*
