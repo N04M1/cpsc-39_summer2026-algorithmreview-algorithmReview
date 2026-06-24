@@ -196,11 +196,12 @@ public class RestaurantSystem {
             System.out.println("Highest-Priced: " + highestPricedItem(r).getName());
             System.out.println("Lowest-Priced: " + lowestPricedItem(r).getName());
             System.out.printf("Average Calories: %.1f%n", averageCalories(r));
+        }
             
     }
 
     public static double avergePrice(Restaurant restaurant) {
-            Arraylist<MeanuItem> items = restaurant.getMenuItems();
+            ArrayList<MenuItem> items = restaurant.getMenuItems();
             double tatal = 0; 
             for (int i = 0; i < items.size(); i++) {
                 total += items.get(i).getPrice();
@@ -208,8 +209,8 @@ public class RestaurantSystem {
              return total / items.size();
     }
     
-    public static MeanuItem highestPricedItem(Restaurant restaurant) {
-            Arraylist<MeanuItem> items = restaurant.getMenuItems();
+    public static MenuItem highestPricedItem(Restaurant restaurant) {
+            ArrayList<MenuItem> items = restaurant.getMenuItems();
             MenuItem highest = items.get(0);
             for (int i = 1; i < items.size(); i++) {
                 if (items.get(i).getPrice() > highest.getPrice()) {
