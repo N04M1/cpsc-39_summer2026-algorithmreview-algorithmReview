@@ -186,7 +186,8 @@ public class RestaurantSystem {
                 }
             }
         }
-    //group work     
+    //group work
+		//Mia Aguilera 
         for (int i = 0; i < restaurants.size(); i++) {
 
             Restaurant r = restaurants.get(i);
