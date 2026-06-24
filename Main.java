@@ -1,8 +1,9 @@
 /*
 ======================================================
 Group Members:
-
 Naomi Rodriguez
+Francisco Gil Mendoza
+Mia Aguilera
 ======================================================
 */
 
