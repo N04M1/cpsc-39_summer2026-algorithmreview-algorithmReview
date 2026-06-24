@@ -194,7 +194,7 @@ public class RestaurantSystem {
             System.out.println("--- " + r.getName() + " ---");
             System.out.printf("Average Price: $%.2f%n", averagePrice(r));
             System.out.println("Highest-Priced: " + highestPricedItem(r).getName());
-            System.out.println("Lowest-Priced: " + lowestPricedItem(r).getName());
+            System.out.println("Lowest-Priced: " + getLowestPricedItem(r).getName());
             System.out.printf("Average Calories: %.1f%n", averageCalories(r));
         }
             
