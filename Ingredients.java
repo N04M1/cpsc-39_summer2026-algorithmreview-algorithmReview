@@ -58,4 +58,3 @@ public class ingredients {
      public String toString() {
         return "ingredient{name = '" + name + "', allergen = " + allergen + ", calories = '" + caorie + "'}";
     }
-}
