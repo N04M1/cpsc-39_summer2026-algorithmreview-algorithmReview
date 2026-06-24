@@ -238,6 +238,25 @@ public class RestaurantSystem {
     return lowest;
 }
 
+//METHOD AVERAGE CALORIES
+    public static double averageCalories(Restaurant restaurant) {
+
+	ArrayList<MenuItem> menuItems =
+		restaurant.getMenuItems();
+
+	if (menuItems.size() == 0) {
+		return 0;
+	}
+
+	int totalCalories = 0;
+
+	for (MenuItem item : menuItems) {
+		totalCalories += item.getTotalCalories();
+	}
+
+	return (double) totalCalories / menuItems.size();
+      }
+
   
     /*
     ======================================================
