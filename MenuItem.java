@@ -27,6 +27,15 @@ public class MenuItem {
         ingredients.add(ingredient);
     }
 
+    public int getTotalCalories() {
+        int total = 0;
+        for (int i = 0; i < ingredients.size(); i++) {
+            total += ingredients.get(i).getCalories();
+        }
+        return total;
+    }
+
+
     @Override
     public String toString() {
         return name + " | " + description + " | $" + price;
