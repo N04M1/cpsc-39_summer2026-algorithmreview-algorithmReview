@@ -242,6 +242,7 @@ public class RestaurantSystem {
 }
 
 //METHOD AVERAGE CALORIES
+	//Naomi Rodriguez
     public static double averageCalories(Restaurant restaurant) {
 
 	ArrayList<MenuItem> menuItems =
