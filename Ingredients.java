@@ -1,22 +1,22 @@
 //Created by Naomi Rodriguez
 
-public class ingredients {
+public class Ingredients {
     
     private String name;
-    private int calories;
+    private int Calories;
     private boolean allergen;
 
     //Default Constructor
-    public ingredients(){
+    public Ingredients(){
         name = "Unknown";
-        calories = 0;
+        Calories = 0;
         allergen = false;
     }
 
     //Parameterized Constructor
-    public ingredients(String name, int calories, boolean allergen)
+    public Ingredients(String name, int Calories, boolean allergen){
         this.name = name;
-        this.calories = 0;
+        this.Calories = 0;
         this.allergen = allergen;
     }   
     
@@ -28,18 +28,18 @@ public class ingredients {
         return name;
     }
 
-    public Void setName(String name){
+    public void setName(String name){
         this.name = name;
     }
 
 
     //CALORIES
     public int getCalories(){
-        return calories;
+        return Calories;
     }
 
-    public Void setCalories(int calories){
-        this.calorie = calorie;
+    public void setCalories(int Calories){
+        this.Calories = Calories;
     }
 
 
@@ -48,13 +48,14 @@ public class ingredients {
         return allergen;
     }
 
-    public Void setAllergen(boolean allergen){
+    public void setAllergen(boolean allergen){
         if(!allergen){
-            this.allergen = name;
+            this.allergen = allergen;
         }
         
     }
 
      public String toString() {
-        return "ingredient{name = '" + name + "', allergen = " + allergen + ", calories = '" + caorie + "'}";
+        return "ingredient{name = '" + name + "', allergen = " + allergen + ", calories = '" + Calories + "'}";
     }
+}

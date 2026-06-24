@@ -23,13 +23,14 @@ public class MenuItem {
     public void setDescription(String description) { this.description = description; }
     public void setPrice(double price) { this.price = price; }
 
-    pulbic void addIngredient(Ingredient ingredient) {
+    public void addIngredient(Ingredient ingredient) {
         ingredients.add(ingredient);
     }
 
     @Override
-    piblic String toString() {
+    public String toString() {
         return name + " | " + description + " | $" + price;
     }
+}
     
   
