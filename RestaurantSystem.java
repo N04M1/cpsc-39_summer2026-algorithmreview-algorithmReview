@@ -192,7 +192,7 @@ public class RestaurantSystem {
             Restaurant r = restaurants.get(i);
 
             System.out.println("--- " + r.getName() + " ---");
-            System.out.printf("Average Price: $%.2f%n", averagePrice(r));
+            System.out.printf("Average Price: $%.2f%n", getAveragePrice(r));
             System.out.println("Highest-Priced: " + highestPricedItem(r).getName());
             System.out.println("Lowest-Priced: " + getLowestPricedItem(r).getName());
             System.out.printf("Average Calories: %.1f%n", averageCalories(r));
@@ -202,7 +202,7 @@ public class RestaurantSystem {
 
     public static double avergePrice(Restaurant restaurant) {
             ArrayList<MenuItem> items = restaurant.getMenuItems();
-            double tatal = 0; 
+            double total = 0; 
             for (int i = 0; i < items.size(); i++) {
                 total += items.get(i).getPrice();
             }
