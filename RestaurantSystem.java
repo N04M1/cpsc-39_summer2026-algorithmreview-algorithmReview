@@ -219,6 +219,26 @@ public class RestaurantSystem {
              return highest;
     }
 
+    public static MenuItem getLowestPricedItem(Restaurant restaurant) {
+
+    ArrayList<MenuItem> items = restaurant.getMenuItems();
+
+    if (items.size() == 0) {
+        return null; // no menu items
+    }
+
+    MenuItem lowest = items.get(0);
+
+    for (int i = 1; i < items.size(); i++) {
+        if (items.get(i).getPrice() < lowest.getPrice()) {
+            lowest = items.get(i);
+        }
+    }
+
+    return lowest;
+}
+
+  
     /*
     ======================================================
     Find Restaurant Method
