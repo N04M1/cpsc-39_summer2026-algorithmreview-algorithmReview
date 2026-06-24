@@ -1,5 +1,5 @@
 // Created by Francisco
-import.java.util.ArrayList;
+import java.util.ArrayList;
 
 public class Restaurant {
 
