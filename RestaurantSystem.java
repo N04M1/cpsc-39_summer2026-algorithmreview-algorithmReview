@@ -200,7 +200,7 @@ public class RestaurantSystem {
             
     }
 
-    public static double avergePrice(Restaurant restaurant) {
+    public static double getAveragePrice(Restaurant restaurant) {
             ArrayList<MenuItem> items = restaurant.getMenuItems();
             double total = 0; 
             for (int i = 0; i < items.size(); i++) {
