@@ -27,7 +27,7 @@ public class Restaurant {
         return name;
     }
 
-    public Void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
